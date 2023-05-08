@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions of the world!",
-    "description": "My first Chrome extension.",
-    "version": "0.4.0",
+    "name": "Hello Vue Extension!",
+    "description": "A chrome extension written using Vue3.",
+    "version": "0.5.0",
     "action": {
-        "default_popup": "src/popup/index.html",
-        "default_icon": "src/images/logo-light-transparent.png"
+        "default_popup": "index.html",
+        "default_icon": "logo-light-transparent.png"
     }
 }
