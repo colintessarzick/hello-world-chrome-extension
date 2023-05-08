@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepublishOnly": "npm run build",
+    "lint": "tslint --project ."
+  },
+  "dependencies": {
+    "chrome-types": "^0.1.191"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.74",
+    "tslint": "^5.11.0",
+    "typescript": "^5.0.4"
+  }
+}
