@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Hello World",
+    "name": "Hello Extensions of the world!",
     "description": "My first Chrome extension.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "action": {
         "default_popup": "hello.html",
         "default_icon": "logo-light-transparent.png"
