@@ -1,4 +1,4 @@
-import { api_base_url } from "./configuration"
+import { setLinkDomain } from "./configuration"
 
 export interface ShortenLinkRequest {
   target_url: string
@@ -14,8 +14,9 @@ export interface ShortenLinkResponse {
 
 export default class API {
 
-  static async shortenLink(body: ShortenLinkRequest): Promise<ShortenLinkResponse> {
-    const res = await fetch(`${api_base_url}/url`, {
+  static async shortenLink(body: ShortenLinkRequest, liveLinks: boolean = false): Promise<ShortenLinkResponse> {
+    const url: string = setLinkDomain(liveLinks) + '/url'
+    const res = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
